@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azur Air UA — Головна</title>
+  <meta name="description" content="Azur Air UA — демонстраційний фінальний проєкт верстки. Адаптивний шаблон." />
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/de/thumb/b/bd/Azur_Air_Ukraine_Logo.svg/2560px-Azur_Air_Ukraine_Logo.svg.png" />
+  <!-- Підключення згенерованого CSS -->
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Azur Air UA — головна">
+        <!-- вставте свій логотип або текст -->
+        <img src="https://upload.wikimedia.org/wikipedia/de/thumb/b/bd/Azur_Air_Ukraine_Logo.svg/2560px-Azur_Air_Ukraine_Logo.svg.png" alt="Azur Air UA логотип" />
+      </a>
+
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Відкрити меню">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="main-nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#destinations">Напрямки</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-title">Azur Air UA</h1>
+          <p class="hero-sub">Бронювання рейсів, актуальні напрямки та зручний сервіс — українська авіакомпанія.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#destinations">Переглянути напрямки</a>
+            <a class="btn btn-outline" href="#contact">Зв'язатись</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-image" role="img" aria-label="Літак Azur Air на фоні неба"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Наші послуги</h2>
+        <div class="grid services-grid">
+          <article class="card">
+            <img src="https://www.airplane-pictures.net/images/uploaded-images/2016/6/28/742847.jpg" alt="Пасажирські рейси" />
+            <h3>Пасажирські рейси</h3>
+            <p>Щоденні рейси по популярним напрямкам, зручні стикування.</p>
+          </article>
+          <article class="card">
+            <img src="https://www.airplane-pictures.net/images/uploaded-images/2022/12/28/1498544.jpg" alt="Чартери" />
+            <h3>Чартери</h3>
+            <p>Організовані чартерні виліти для груп та туристичних партнерів.</p>
+          </article>
+          <article class="card">
+            <img src="	https://i.pinimg.com/736x/56/06/24/56062493d1b6da30d44834661c04aef7.jpg" alt="Сервіс та підтримка" />
+            <h3>Сервіс та підтримка</h3>
+            <p>Клієнтський центр 24/7 та індивідуальні послуги для бізнес-клієнтів.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS / SLIDER -->
+    <section id="destinations" class="section">
+      <div class="container">
+        <h2 class="section-title">Популярні напрямки</h2>
+
+        <div class="slider-wrap">
+          <div class="slider" id="dest-slider">
+            <div class="slide">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Larnaca_01-2017_img14_Finikoudes.jpg" alt="Напрямок 1" />
+              <div class="slide-caption"><strong>Київ — Ларнака</strong></div>
+            </div>
+            <div class="slide">
+              <img src="https://images.triphearts.com/H1JI000bp0sXgm_A1-AfxcFCmFwgH-mWFzeiJ4S5Jc4/fit/600/600/no/0/aHR0cHM6Ly9hbXMz/LmRpZ2l0YWxvY2Vh/bnNwYWNlcy5jb20v/dHJpcGhlYXJ0cy1z/dG9yYWdlL2dlb25h/bWVzL2NpdGllcy8y/NDEvdmVudWUtMjk4/NjcyMV8xMjgwX2E2/NWRiM2IzMGQuanBn.jpg" alt="Напрямок 2" />
+              <div class="slide-caption"><strong>Харків — Стамбул</strong></div>
+            </div>
+            <div class="slide">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhhqD2_LruxwMFOnG2jQLn3q_WJS5jfq7Wg&s" alt="Напрямок 3" />
+              <div class="slide-caption"><strong>Львів — Анталія</strong></div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="slider-prev" aria-label="Попередній слайд">&larr;</button>
+            <button class="slider-next" aria-label="Наступний слайд">&rarr;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TABS (about) -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Про компанію</h2>
+
+        <div class="tabs" data-tabs>
+          <div role="tablist" aria-label="Про Azur Air tabs" class="tabs-list">
+            <button role="tab" aria-selected="true">Історія</button>
+            <button role="tab" aria-selected="false">Безпека</button>
+            <button role="tab" aria-selected="false">Партнери</button>
+          </div>
+
+          <div class="tabs-panels">
+            <div role="tabpanel">Azur Air UA — молода амбітна авіакомпанія з фокусом на якості сервісу.</div>
+            <div role="tabpanel" hidden>Суворі процедури безпеки та регулярні техогляди флоту.</div>
+            <div role="tabpanel" hidden>Співпраця з туристичними операторами і партнерами по всій Європі.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+      <div class="container">
+        <h2>Готові до подорожі?</h2>
+        <p>Забронюйте квиток або зв'яжіться з нами — ми допоможемо підібрати найкращий варіант.</p>
+        <a class="btn btn-primary" href="#contact">Забронювати</a>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Контакти</h2>
+        <p>Телефон: +380 XX XXX XXXX | Email: info@azurair.ua</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Azur Air UA. Усі права захищені.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#">Політика конфіденційності</a>
+        <a href="#">Умови перевезення</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

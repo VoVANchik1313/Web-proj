@@ -1,0 +1,24 @@
+@import 'variables';
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+.services-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  background: $white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.04);
+  text-align: left;
+}
+.card h3 { color: $blue-dark; margin: 0.5rem 0; }
+
+/* Responsiveness */
+@include respond(null, $bp-md - 1) {
+  .services-grid { grid-template-columns: 1fr; }
+}
+@include respond($bp-md, $bp-lg - 1) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}

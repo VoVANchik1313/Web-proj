@@ -1,0 +1,55 @@
+@import 'variables';
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+
+.logo img { height: 44px; display: block; }
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list { display: flex; gap: 1rem; }
+.nav-list a {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  color: $blue-dark;
+}
+.nav-list a:hover { background: rgba($blue, .07); }
+
+.nav-toggle {
+  display: none;
+  width: 44px; height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: transparent;
+}
+.hamburger {
+  width: 22px;
+  height: 2px;
+  background: $blue-dark;
+  position: relative;
+  display: inline-block;
+}
+.hamburger::before, .hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px; height: 2px;
+  background: $blue-dark;
+}
+.hamburger::before { top: -7px; }
+.hamburger::after { top: 7px; }
+
+/* Responsive */
+@include respond(null, $bp-md - 1) {
+  .nav { position: absolute; top: 72px; right: 12px; background: $white; box-shadow: 0 8px 24px rgba(0,0,0,0.08); display: none; border-radius: 8px; padding: 1rem; }
+  .nav--open { display: block; }
+  .nav-list { flex-direction: column; gap: 0.5rem; }
+  .nav-toggle { display: inline-flex; }
+}
